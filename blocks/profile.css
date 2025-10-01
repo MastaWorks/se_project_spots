@@ -15,25 +15,58 @@
 .profile__column{
   display: flex;
   flex-direction: column;
+
 }
 
 .profile__name{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 32px;
   margin: 0 0 12px 0;
 }
 
 .profile__subtitle{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
   margin: 0;
 }
 
 .profile__edit-button{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #212121;
+  opacity: 70%;
+  height: 16px;
+  width: 120px;
   margin-top: auto;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.profile__edit-button img{
+  margin-right: 5px;
 }
 
 .profile__newpost-button{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
   height: 52px;
   width: 149px;
-  margin: 138px 0 0 auto;
-  color: white;
+  margin: auto 0 0 auto;
+  padding: 18px auto;
+  color: #FCF5E5;
   background-color: black;
   border-radius: 10px;
+}
+
+.profile__newpost-button img{
+  height: 12px;
+  width: 12px;
+  margin-right: 5px;
 }
