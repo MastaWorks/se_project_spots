@@ -1,7 +1,11 @@
+.cards{
+  border-bottom: solid 1px #21212166;
+}
+
 .cards__list{
   list-style: none;
   padding: 0;
-  margin: 20px 0 0 0;
+  margin: 20px 0 40px 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, 413px);
   justify-content: center;
