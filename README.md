@@ -1,21 +1,23 @@
-# Project 3: Spots
+# 🌍 Project 3: Spots
 
-### Overview  
+## 📁 Tech Category
 
-* Intro  
-* Figma  
-* Images  
-  
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+- HTML  
+- CSS  
+- Figma  
+- Responsive Design  
+
+## 📝 Project Description  
+
+This project involves building a responsive web page layout using **HTML** and **CSS**, designed to function seamlessly across a wide range of screen sizes and devices. The structure and styling are based on a provided **Figma** design, simulating a real-world workflow where developers translate UI/UX designs into code. The goal is to practice responsive design techniques and create a visually consistent user experience.
+
+## 🎨 Figma Design
+
+You can view the design used for this project here:  
+👉 [Figma: Spots Project Design](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1) 
+
+## 🚀 See it for yourself!
+
+To run this project locally:
+
+- Deployment Link: 

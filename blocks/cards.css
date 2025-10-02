@@ -1,5 +1,6 @@
 .cards{
   border-bottom: solid 1px #21212166;
+  margin: 0 auto;
 }
 
 .cards__list{
@@ -10,4 +11,14 @@
   grid-template-columns: repeat(auto-fit, 413px);
   justify-content: center;
   gap: 40px 20px;
+}
+
+@media screen and (max-width: 627px) {
+  .cards{
+    max-width: 288px;
+  }
+
+  .cards__list{
+    grid-template-columns: repeat(auto-fit, 288px);
+  }
 }
