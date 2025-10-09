@@ -33,10 +33,15 @@
           />
 
           <div class="profile__column">
-            <h1 class="profile__name">Bessie Coleman Man Esta el bueno can, An Julio cappacino o etas</h1>
-            <p class="profile__subtitle">Civil Aviator, StarMan, Kirby Chad, Ganondorf, Sonic the Sonic</p>
+            <h1 class="profile__name">
+              Bessie Coleman Man Esta el bueno can, An Julio cappacino o etas
+            </h1>
+            <p class="profile__subtitle">
+              Civil Aviator, StarMan, Kirby Chad, Ganondorf, Sonic the Sonic
+            </p>
             <button type="button" class="profile__edit-button">
-              <img src="./images/Edit Icon.svg" alt="Pencil Image" />Edit Profile
+              <img src="./images/Edit Icon.svg" alt="Pencil Image" />Edit
+              Profile
             </button>
           </div>
 
@@ -48,42 +53,68 @@
         <section class="cards page__section">
           <ul class="cards__list">
             <li class="card">
-              <img src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg" alt="" class="card__image">
+              <img
+                src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt=""
+                class="card__image"
+              />
               <div class="card__content">
                 <h2 class="card__caption">Val Thorens</h2>
                 <button type="button" class="card__like-button"></button>
               </div>
             </li>
             <li class="card">
-              <img src="./images/2-photo-by-ceiline-from-pexels.jpg" alt="" class="card__image">
+              <img
+                src="./images/2-photo-by-ceiline-from-pexels.jpg"
+                alt=""
+                class="card__image"
+              />
               <div class="card__content">
                 <h2 class="card__caption">Restaurant terrace</h2>
                 <button type="button" class="card__like-button"></button>
               </div>
             </li>
             <li class="card">
-              <img src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg" alt="" class="card__image">
+              <img
+                src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg"
+                alt=""
+                class="card__image"
+              />
               <div class="card__content">
                 <h2 class="card__caption">An outdoor cafe</h2>
                 <button type="button" class="card__like-button"></button>
               </div>
             </li>
             <li class="card">
-              <img src="./images/4-photo-by-maurice-laschet-from-pexels.jpg" alt="" class="card__image">
+              <img
+                src="./images/4-photo-by-maurice-laschet-from-pexels.jpg"
+                alt=""
+                class="card__image"
+              />
               <div class="card__content">
-                <h2 class="card__caption">A very long bridge, over the forest...</h2>
+                <h2 class="card__caption">
+                  A very long bridge, over the forest...
+                </h2>
                 <button type="button" class="card__like-button"></button>
               </div>
             </li>
             <li class="card">
-              <img src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg" alt="" class="card__image">
+              <img
+                src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
+                alt=""
+                class="card__image"
+              />
               <div class="card__content">
                 <h2 class="card__caption">Tunnel with morning light</h2>
                 <button type="button" class="card__like-button"></button>
               </div>
             </li>
             <li class="card">
-              <img src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg" alt="" class="card__image">
+              <img
+                src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt=""
+                class="card__image"
+              />
               <div class="card__content">
                 <h2 class="card__caption">Mountain house</h2>
                 <button type="button" class="card__like-button"></button>
@@ -97,6 +128,64 @@
       <footer class="footer page__section">
         <p>2025 © Spots</p>
       </footer>
+
+      <div class="modal">
+        <div class="modal__container">
+          <button type="button" class="modal__exit-button"></button>
+
+          <h2 class="modal__title">Edit Profile</h2>
+          <form class="modal__form">
+            <label for="profile-name-input" class="modal__label">Name</label>
+            <input
+              id="profile-name-input"
+              type="text"
+              class="modal__input"
+              placeholder="Type your name"
+            />
+
+            <label for="profile-description-input" class="modal__label"
+              >Description</label
+            >
+            <input
+              id="profile-description-input"
+              type="text"
+              class="modal__input"
+              placeholder="Describe yourself"
+            />
+
+            <button type="submit" class="modal__save-button">Save</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal modal_is-opened">
+        <div class="modal__container">
+          <button type="button" class="modal__exit-button"></button>
+
+          <h2 class="modal__title">New Post</h2>
+          <form class="modal__form">
+            <label for="card-image-input" class="modal__label"
+              >Image link</label
+            >
+            <input
+              id="card-image-input"
+              type="url"
+              class="modal__input"
+              placeholder="Paste a link to the picture"
+            />
+
+            <label for="card-caption-input" class="modal__label">Caption</label>
+            <input
+              id="card-caption-input"
+              type="text"
+              class="modal__input"
+              placeholder="Type your caption"
+            />
+
+            <button type="submit" class="modal__save-button">Save</button>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>
