@@ -51,15 +51,13 @@
   font-size: 16px;
   line-height: 1;
   color: #212121;
-  opacity: 40%;
-  height: 16px;
-  width: 120px;
+  opacity: 70%;
   margin-top: auto;
   padding: 0;
   background-color: transparent;
   border: none;
   display: flex;
-  justify-content: center;
+  cursor: pointer;
 }
 
 .profile__edit-button:hover{
@@ -81,7 +79,9 @@
   padding: 18px auto;
   color: #FCF5E5;
   background-color: #212121;
+  border: none;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .profile__newpost-button:hover{
@@ -112,6 +112,7 @@
 
   .profile__name{
     margin: 0 0 6px 0;
+    font-size: 20px;
   }
 
   .profile__column{

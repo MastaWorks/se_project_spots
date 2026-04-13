@@ -17,6 +17,7 @@
 }
 
 .card__caption{
+  max-width: 350px;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -31,7 +32,7 @@
 }
 
 .card__like-button{
-  background-image: url(../images/Like\ Icon.svg);
+  background-image: url(../images/Like-Icon.svg);
   height: 20px;
   width: 23px;
   margin: 0;
@@ -39,6 +40,7 @@
   border: none;
   background-color: transparent;
   opacity: 40%;
+  cursor: pointer;
 }
 
 .card__like-button:hover{
@@ -46,6 +48,11 @@
 }
 
 @media screen and (max-width: 627px) {
+  .card__caption{
+    max-width: 250px;
+    font-size: 16px;
+  }
+
   .card__image{
     height: 288px;
   }
