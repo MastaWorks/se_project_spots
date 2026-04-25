@@ -43,6 +43,7 @@
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  opacity: 70%;
 }
 
 .profile__edit-button{
