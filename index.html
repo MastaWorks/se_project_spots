@@ -1,186 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="TripleTen Project Sprint 3" />
-    <meta name="author" content="Tanveer Efty" />
-    <meta name="keywords" content="sprint 3, html, css, project" />
-    <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="favicon.ico" />
-    <title>Sprint 3: Spots</title>
-  </head>
-  <body>
-    <div class="page">
-      <!-- Header -->
-      <header class="header">
-        <img src="./images/logo.svg" alt="Header-Logo" class="header__logo" />
-      </header>
 
-      <!-- Main Content -->
-      <main class="content">
-        <section class="profile page__section">
-          <img
-            src="./images/avatar.jpg"
-            alt="Profile-picture"
-            class="profile__avatar"
-          />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TripleTen Project Sprint 3" />
+  <meta name="author" content="Tanveer Efty" />
+  <meta name="keywords" content="sprint 3, html, css, project" />
+  <link rel="stylesheet" href="./pages/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="favicon.ico" />
+  <title>Sprint 3: Spots</title>
+</head>
 
-          <div class="profile__column">
-            <h1 class="profile__name">Bessie Coleman</h1>
-            <p class="profile__description">Civil Aviator</p>
-            <button type="button" class="profile__edit-button"><img src="./images/Edit-Icon.svg" alt="Pencil Image"/>Edit Profile</button>
-          </div>
+<body>
+  <div class="page">
+    <!-- Header -->
+    <header class="header">
+      <img src="./images/logo.svg" alt="Header-Logo" class="header__logo" />
+    </header>
 
-          <button type="button" class="profile__newpost-button"><img src="./images/Group-26.svg" alt="Plus Image" />New Post</button>
-        </section>
+    <!-- Main Content -->
+    <main class="content">
+      <section class="profile page__section">
+        <img src="./images/avatar.jpg" alt="Profile-picture" class="profile__avatar" />
 
-        <section class="cards page__section">
-          <ul class="cards__list">
-            <li class="card">
-              <img
-                src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg"
-                alt=""
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__caption">Val Thorens</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/2-photo-by-ceiline-from-pexels.jpg"
-                alt=""
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__caption">Restaurant terrace</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg"
-                alt=""
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__caption">An outdoor cafe</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/4-photo-by-maurice-laschet-from-pexels.jpg"
-                alt=""
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__caption">
-                  A very long bridge, over the forest...
-                </h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
-                alt=""
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__caption">Tunnel with morning light</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg"
-                alt=""
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__caption">Mountain house</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </main>
-
-      <!-- Footer -->
-      <footer class="footer page__section">
-        <p class="footer__copyright">2025 © Spots</p>
-      </footer>
-
-      <div class="modal" id="edit-profile-modal">
-        <div class="modal__container">
-          <button type="button" class="modal__exit-button"></button>
-
-          <h2 class="modal__title">Edit Profile</h2>
-          <form class="modal__form">
-            <label for="profile-name-input" class="modal__label">Name</label>
-            <input
-              id="profile-name-input"
-              type="text"
-              class="modal__input"
-              placeholder="Type your name"
-              required
-            />
-
-            <label for="profile-description-input" class="modal__label"
-              >Description</label
-            >
-            <input
-              id="profile-description-input"
-              type="text"
-              class="modal__input"
-              placeholder="Describe yourself"
-            />
-
-            <button type="submit" class="modal__save-button" id="edit-profile-save-button">Save</button>
-          </form>
+        <div class="profile__column">
+          <h1 class="profile__name">Bessie Coleman</h1>
+          <p class="profile__description">Civil Aviator</p>
+          <button type="button" class="profile__edit-button"><img src="./images/Edit-Icon.svg" alt="Pencil Image" />Edit
+            Profile</button>
         </div>
-      </div>
 
-      <div class="modal" id="new-post-modal">
-        <div class="modal__container">
-          <button type="button" class="modal__exit-button"></button>
+        <button type="button" class="profile__newpost-button"><img src="./images/Group-26.svg" alt="Plus Image" />New
+          Post</button>
+      </section>
 
-          <h2 class="modal__title">New Post</h2>
-          <form class="modal__form">
-            <label for="card-image-input" class="modal__label"
-              >Image link</label
-            >
-            <input
-              id="card-image-input"
-              type="url"
-              class="modal__input"
-              placeholder="Paste a link to the picture"
-            />
+      <section class="cards page__section">
+        <ul class="cards__list">
+          <template id="card-template">
+            <li class="card">
+              <button type="button" class="card__delete-button"></button>
+              <img src="" alt="" class="card__image" />
+              <div class="card__content">
+                <h2 class="card__caption"></h2>
+                <button type="button" class="card__like-button"></button>
+              </div>
+            </li>
+          </template>
+        </ul>
+      </section>
+    </main>
 
-            <label for="card-caption-input" class="modal__label">Caption</label>
-            <input
-              id="card-caption-input"
-              type="text"
-              class="modal__input"
-              placeholder="Type your caption"
-            />
+    <!-- Footer -->
+    <footer class="footer page__section">
+      <p class="footer__copyright">2025 © Spots</p>
+    </footer>
 
-            <button type="submit" class="modal__save-button">Save</button>
-          </form>
-        </div>
+    <div class="modal" id="edit-profile-modal">
+      <div class="modal__container">
+        <button type="button" class="modal__exit-button"></button>
+
+        <h2 class="modal__title">Edit Profile</h2>
+        <form class="modal__form">
+          <label for="profile-name-input" class="modal__label">Name</label>
+          <input id="profile-name-input" type="text" class="modal__input" placeholder="Type your name" required />
+
+          <label for="profile-description-input" class="modal__label">Description</label>
+          <input id="profile-description-input" type="text" class="modal__input" placeholder="Describe yourself" />
+
+          <button type="submit" class="modal__save-button" id="edit-profile-save-button">Save</button>
+        </form>
       </div>
     </div>
 
-    <script src="./scripts/index.js"></script>
-  </body>
+    <div class="modal" id="new-post-modal">
+      <div class="modal__container">
+        <button type="button" class="modal__exit-button"></button>
+
+        <h2 class="modal__title">New Post</h2>
+        <form class="modal__form">
+          <label for="card-image-input" class="modal__label">Image link</label>
+          <input id="card-image-input" type="url" class="modal__input" placeholder="Paste a link to the picture" />
+
+          <label for="card-caption-input" class="modal__label">Caption</label>
+          <input id="card-caption-input" type="text" class="modal__input" placeholder="Type your caption" />
+
+          <button type="submit" class="modal__save-button">Save</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./scripts/index.js"></script>
+</body>
 
 </html>
