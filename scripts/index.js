@@ -44,6 +44,12 @@ const newPostModal = document.querySelector("#new-post-modal")
 const newPostCloseBtn = newPostModal.querySelector(".modal__exit-button");
 const newPostForm = newPostModal.querySelector(".modal__form");
 
+const previewModal = document.querySelector(".modal_type_preview");
+const previewModalCloseBtn = previewModal.querySelector(".modal__exit-button_preview");
+const previewImageEl = previewModal.querySelector(".modal__preview-image");
+const previewCaptionEl = previewModal.querySelector(".modal__preview-caption");
+
+
 const newPostImageLinkInput = newPostModal.querySelector("#card-image-input");
 const newPostCaptionInput = newPostModal.querySelector("#card-caption-input");
 
@@ -72,6 +78,14 @@ function getCardElement(data) {
         cardElement.remove();
     })
 
+    cardImgEl.addEventListener("click", () =>{
+        previewImageEl.src = data.link;
+        previewImageEl.alt = data.name;
+        previewCaptionEl.textContent = data.name;
+
+        openModal(previewModal);
+    })
+
     return cardElement;
 };
 
@@ -82,6 +96,10 @@ function openModal(modal) {
 function closeModal(modal) {
     modal.classList.remove("modal_is-opened)");
 }
+
+previewModalCloseBtn.addEventListener("click", () => {
+    closeModal(previewModal);
+})
 
 function handleProfileSubmitForm(event) {
     event.preventDefault();

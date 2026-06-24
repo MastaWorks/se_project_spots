@@ -178,8 +178,7 @@
   }
 
   .modal__preview-image{
-    max-width: 288px;
-    height: 192px;
+
   }
 
   .modal__exit-button_preview {
@@ -196,5 +195,6 @@
 
   .modal__preview-image{
     max-width: unset;
+    max-height: 80vw;
   }
 }
