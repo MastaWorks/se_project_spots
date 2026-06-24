@@ -43,7 +43,7 @@
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  opacity: 70%;
+  opacity: .7;
 }
 
 .profile__edit-button{
@@ -52,7 +52,7 @@
   font-size: 16px;
   line-height: 1;
   color: #212121;
-  opacity: 70%;
+  opacity: .7;
   margin-top: auto;
   padding: 0;
   background-color: transparent;
@@ -62,7 +62,7 @@
 }
 
 .profile__edit-button:hover{
-  opacity: 100%;
+  opacity: 1;
 }
 
 .profile__edit-button img{
@@ -86,7 +86,7 @@
 }
 
 .profile__newpost-button:hover{
-  opacity: 80%;
+  opacity: .8;
 }
 
 .profile__newpost-button img{

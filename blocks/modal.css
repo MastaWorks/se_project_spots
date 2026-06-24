@@ -72,7 +72,7 @@
   background-color: transparent;
   border: none;
   position: absolute;
-  opacity: 40%;
+  opacity: 0.4%;
   top: 32px;
   right: 50px;
   height: 40px;
@@ -83,7 +83,7 @@
 }
 
 .modal__exit-button:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .modal__save-button {
@@ -102,7 +102,7 @@
 }
 
 .modal__save-button:hover {
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 .modal_type_preview{
@@ -114,7 +114,7 @@
 }
 
 .modal__preview-image {
-  max-width: 80vh;
+  max-width: 80vw;
   max-height: 80vh;
   width: 100%;
   border-radius: 8px;
@@ -136,7 +136,7 @@
 }
 
 .modal__exit-button_preview:hover {
-  opacity: 40%;
+  opacity: 0.4;
 }
 
 .modal__preview-caption {
@@ -145,7 +145,10 @@
   font-weight: 500;
   line-height: 1.2;
   font-size: 20px;
-  margin: 8px 0 0;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 10px);
+  margin: 0;
   padding: 4px 8px;
   border: solid #212121;
   background-color: #212121;
@@ -177,7 +180,13 @@
   }
 
   .modal__preview-image{
+    max-width: 100%;
+    height: auto;
+  }
 
+  .modal__preview-caption{
+    font-size: 16px;
+    line-height: 1.2;
   }
 
   .modal__exit-button_preview {
