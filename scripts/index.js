@@ -58,7 +58,6 @@ const cardTemplate = document
     .content.querySelector(".card");
 const cardList = document.querySelector(".cards__list");
 
-
 function getCardElement(data) {
     const cardElement = cardTemplate.cloneNode(true);
     const cardTitleEl = cardElement.querySelector(".card__caption");
@@ -94,12 +93,10 @@ function openModal(modal) {
 }
 
 function closeModal(modal) {
-    modal.classList.remove("modal_is-opened)");
+  modal.classList.remove("modal_is-opened");
 }
 
-previewModalCloseBtn.addEventListener("click", () => {
-    closeModal(previewModal);
-})
+
 
 function handleProfileSubmitForm(event) {
     event.preventDefault();
@@ -134,6 +131,10 @@ editProfileCloseBtn.addEventListener("click", function () {
 newPostBtn.addEventListener("click", function () {
     openModal(newPostModal);
 });
+
+previewModalCloseBtn.addEventListener("click", function() {
+    closeModal(previewModal);
+})
 
 newPostForm.addEventListener('submit', handleNewPostForm);
 
